@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+}
+
+.header {
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.song-list {
+  list-style: none;
+  padding: 0;
+}
+
+.song-item {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.song-title {
+  font-weight: bold;
+}
+
+.song-meta {
+  font-size: 13px;
+  color: #666;
+}
