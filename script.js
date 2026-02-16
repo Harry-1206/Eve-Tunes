@@ -12,7 +12,12 @@ function renderSongs(list) {
     li.className = "song-item";
 
     li.innerHTML = `
-      <div class="song-title">${song.title}</div>
+      <a class="song-title"
+         href="${song.youtubeUrl || '#'}"
+         target="_blank"
+         rel="noopener noreferrer">
+        ${song.title}
+      </a>
       <div class="song-meta">
         ${song.releaseDate} / ${song.album}
       </div>
@@ -37,7 +42,7 @@ function handleSort() {
 
   if (value === "title") {
     filteredSongs.sort((a, b) =>
-      a.title.localeCompare(b.title)
+      a.title.localeCompare(b.title, "ja")
     );
   }
 

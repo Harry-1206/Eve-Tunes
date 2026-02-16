@@ -49,3 +49,15 @@ input, select {
   font-size: 13px;
   color: #666;
 }
+
+.song-title {
+  font-weight: bold;
+  text-decoration: none;
+  color: #111;
+  display: inline-block;
+}
+
+.song-title:hover {
+  text-decoration: underline;
+  color: #0077ff;
+}
