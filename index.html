@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artist Song Sort</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>Eve Tunes</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- コントロールエリア -->
+    <section class="controls">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="曲名で検索..."
+      />
+
+      <select id="sortSelect">
+        <option value="default">並び替え</option>
+        <option value="title">タイトル順</option>
+        <option value="date">リリース日順</option>
+      </select>
+    </section>
+
+    <!-- 楽曲一覧 -->
+    <section>
+      <ul id="songList" class="song-list"></ul>
+    </section>
+
+  </main>
+
+  <script src="songs.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
